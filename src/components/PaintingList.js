@@ -6,7 +6,14 @@ export default function PaintingList({ items }) {
     <ul>
       {items.map(item => (
         <li key={item.id}>
-          <Painting {...item} />
+          <Painting
+            imgUrl={item.url}
+            title={item.title}
+            author={item.author.tag}
+            profileUrl={item.author.url}
+            price={item.price}
+            quantity={item.quantity}
+          />
         </li>
       ))}
     </ul>
@@ -20,9 +27,3 @@ PaintingList.propTypes = {
     }),
   ).isRequired,
 };
-
-// url={item.url}
-// title={item.title}
-// author={item.author}
-// price={item.price}
-// quantity={item.quantity}
