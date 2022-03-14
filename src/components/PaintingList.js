@@ -9,7 +9,7 @@ export default function PaintingList({ items }) {
           <Painting
             imgUrl={item.url}
             title={item.title}
-            author={item.author.tag}
+            authorName={item.author.tag}
             profileUrl={item.author.url}
             price={item.price}
             quantity={item.quantity}
