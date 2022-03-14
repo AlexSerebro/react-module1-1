@@ -1,7 +1,7 @@
-// import PaintingList from './components/PaintingList';
+import PaintingList from './components/PaintingList';
 import ColorPicker from './components/ColorPicker/ColorPicker';
-// import Section from './components/Section';
-// import paintings from './paintings.json';
+import Section from './components/Section';
+import paintings from './paintings.json';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -16,9 +16,9 @@ export default function App() {
   return (
     <div>
       <ColorPicker options={colorPickerOptions} />
-      {/* <Section title="Top of week"> */}
-      {/* <PaintingList items={paintings} /> */}
-      {/* </Section> */}
+      <Section title="Top of week">
+        <PaintingList items={paintings} />
+      </Section>
     </div>
   );
 }
