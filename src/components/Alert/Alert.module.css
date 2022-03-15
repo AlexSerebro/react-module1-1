@@ -1,0 +1,18 @@
+.Alert {
+  line-height: 1.5;
+  padding: 10px 20px;
+  background-color: gray;
+  color: #fff;
+}
+
+.Alerterror {
+  background-color: red;
+}
+
+.Alertwarning {
+  background-color: orange;
+}
+
+.Alertsuccess {
+  background-color: green;
+}
