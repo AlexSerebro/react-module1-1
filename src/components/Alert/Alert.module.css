@@ -1,18 +1,21 @@
-.Alert {
+.alert {
   line-height: 1.5;
   padding: 10px 20px;
   background-color: gray;
   color: #fff;
 }
 
-.Alerterror {
+.error {
+  composes: alert;
   background-color: red;
 }
 
-.Alertwarning {
+.warning {
+  composes: alert;
   background-color: orange;
 }
 
-.Alertsuccess {
+.succes {
+  composes: alert;
   background-color: green;
 }

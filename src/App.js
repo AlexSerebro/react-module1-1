@@ -17,6 +17,9 @@ export default function App() {
   return (
     <div>
       <Alert text="PTN PNH" />
+      <Alert text="PTN PNH" type="succes" />
+      <Alert text="PTN PNH" type="warning" />
+      <Alert text="PTN PNH" type="error" />
       {/* <ColorPicker options={colorPickerOptions} />
       <Section title="Top of week">
         <PaintingList items={paintings} />
