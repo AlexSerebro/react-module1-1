@@ -1,6 +1,7 @@
 // import PaintingList from './components/PaintingList';
 // import ColorPicker from './components/ColorPicker/ColorPicker';
 import Alert from './components/Alert/Alert';
+import Container from './components/Container/Container';
 // import Section from './components/Section';
 // import paintings from './paintings.json';
 
@@ -15,7 +16,7 @@ import Alert from './components/Alert/Alert';
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <Alert text="PTN PNH" />
       <Alert text="PTN PNH" type="succes" />
       <Alert text="PTN PNH" type="warning" />
@@ -24,6 +25,6 @@ export default function App() {
       <Section title="Top of week">
         <PaintingList items={paintings} />
       </Section> */}
-    </div>
+    </Container>
   );
 }
